@@ -32,8 +32,7 @@ function sellCopper1(){
         
         money += copperCost*copper;
         copper -= copper;
-        document.getElementById("money").innerHTML = "money: $" + money;
-        document.getElementById("copper").innerHTML = "Copper count: " + copper;
+        showText();
     
 }
 
@@ -41,8 +40,7 @@ function sellCopper2(){
     if (copper >= 2){
     money += copperCost*(copper/2);
     copper -= (copper/2);
-    document.getElementById("money").innerHTML = "money: $" + money;
-    document.getElementById("copper").innerHTML = "Copper count: " + copper;
+    showText();
     }
 
 }
@@ -51,7 +49,7 @@ function buyMiner(){
     if (money >= 150){
         money -= 150;
         copperMiner += 1;
-        document.getElementById("money").innerHTML = "money: $" + money;
+        showText();
 
     }
 }
@@ -60,6 +58,7 @@ function showText(){
     document.getElementById("copperMineTitle").innerHTML = "COPPER MINE (" + 1*copperMiner/seconds + " copper/s)";
     document.getElementById("copper").innerHTML = "Copper count: " + copper;
     document.getElementById("copperMiners").innerHTML = "Miners: " + copperMiner;
+    document.getElementById("money").innerHTML = "$" + money + " Cash";
 }
 
 function copperMine(){

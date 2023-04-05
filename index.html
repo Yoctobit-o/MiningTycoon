@@ -5,32 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINING TYCOON</title>
-    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>
-            MINING TYCOON
-        </h1>
-        <h3 id="money">
-            money: $0
-        </h3>
+        <div class ="flex-container">
+            <div>
+                MINING TYCOON
+            </div>
+            <div id="money">
+                $0 Cash
+            </div>
+
+        </div>
+        
     </header>
 
-    <button onClick="buyCopperMine(), style.display = 'none'">Buy Copper Mine: $0</button>
-
-    
-    <p id="copperMineTitle"></p>
-    <p id="copperMiners"></p>
-    <p id="copper"></p>
-
-    <div id="upgradeBatch1", style="display: none">
-        <button onClick="mineCopper()">Mine Copper</button>
-        <br>
-        <button onClick="sellCopper1()">Sell 100% of Copper</button>
-        <button onClick="sellCopper2()">Sell 50% of Copper</button>
-        <button onClick="buyMiner()">Buy Miner $150</button>
+    <div class="initial">
+        <button class="buyButton" onClick="buyCopperMine(), style.display = 'none'">Buy Copper Mine: $0</button>
     </div>
+    
+
+    <div class="mine1">
+        <p id="copperMineTitle"></p>
+        <p id="copperMiners"></p>
+        <p id="copper"></p>
+
+        <div id="upgradeBatch1", style="display: none">
+            <button class="defaultButton" onClick="mineCopper()">Mine Copper</button>
+            <br>
+            <button class="defaultButton" onClick="sellCopper1()">Sell 100% of Copper</button>
+            <button class="defaultButton" onClick="sellCopper2()">Sell 50% of Copper</button>
+            <button class="defaultButton" onClick="buyMiner()">Buy Miner $150</button>
+        </div>
+    </div>
+ 
+
+   
     
 
     <script  src="./js/main.js">
