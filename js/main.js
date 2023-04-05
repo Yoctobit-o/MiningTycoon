@@ -11,7 +11,6 @@ let seconds = count/1000;
 console.log(copperMineBought);
 
 function buyCopperMine(){
-    
     copperMineBought = true;
     console.log(copperMineBought);
     showText();
@@ -32,7 +31,7 @@ function sellCopper1(){
         
         money += copperCost*copper;
         copper -= copper;
-        showText();
+       showText();
     
 }
 
@@ -40,7 +39,7 @@ function sellCopper2(){
     if (copper >= 2){
     money += copperCost*(copper/2);
     copper -= (copper/2);
-    showText();
+     showText();
     }
 
 }

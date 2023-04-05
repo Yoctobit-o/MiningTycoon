@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 header{
 	overflow: hidden;
 	background-color: #5131a8;
@@ -9,7 +13,7 @@ header{
 
 body{
 	background-color:#d6d6d6;
-	color:#666666;
+	color:#333;
 
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -35,25 +39,6 @@ body{
 	font-size: larger;
 
 }
-
-
-a{
-	text-decoration: none;
-	color:#000;
-}
-
-a:hover{
-	color:red;
-}
-
-a:active{
-	color:green;
-}
-
-/*a:visited{
-	color:black;
-}
-*/
 
 .buyButton{
 	background-color: #333;
@@ -88,10 +73,50 @@ a:active{
 	background-color: #865e5e;
 }
 
-.container{
+.mine1{
 	width:80%;
-	margin:auto;
+	margin: 5px;
+	margin-left: 15px;
+	border-color: #333;
+	border: 3px;
+	border-style: solid;
+	padding-top: 0px;
+
 }
+
+.mine1Content{
+	padding: 5px;
+}
+
+.upgradeBatch1{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	
+}
+
+.top{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.bottom{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.mineTitle{
+	background-color: #333;
+	padding: 3px;
+	padding-left: 0px;
+	border: none;
+	margin: none;
+	color: #fff;
+
+}
+
 
 .clr{
 	clear:both;
